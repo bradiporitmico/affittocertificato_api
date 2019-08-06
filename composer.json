@@ -5,9 +5,15 @@
     "keywords": ["affitto","certificato"],
     "homepage": "https://github.com/bradiporitmico/affittocertificato_clientapi",
     "license": "GPL-3.0-or-later",
+    "version": "1.0.34",
+    "authors":[{
+        "name": "Paolo Rosi",
+        "email": "paolo.rosi@affittocertificato.it",
+        "homepage": "https://www.affittocertificato.it",
+        "role": "developer"
+    }],
     "require": {
-        "php": ">=7.0",
-        "affittocertificato/clientapi": "master",
+        "php": ">=7.0"
     },
     "autoload": {
         "psr-4": {
