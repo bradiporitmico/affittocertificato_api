@@ -5,7 +5,7 @@
  * 
  * 
  * @package    AffittoCertificatoAPI
- * @license	   http://www.apache.org/licenses/LICENSE-2.0 Apache License, Version 2.0
+ * @license	   https://www.gnu.org/licenses/gpl-3.0.html  GPL 3.0
  * @version	   Tue Aug 6 15:46:02 2019 +0200
  * @author 	Paolo Rosi <paolo.rosi@affittocertificato.it>
  * @link	   https://github.com/bradiporitmico/affittocertificato_api

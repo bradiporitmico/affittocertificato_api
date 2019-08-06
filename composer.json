@@ -1,0 +1,16 @@
+{
+    "name": "affittocertificato/clientapi",
+    "type": "library",
+    "description": "Lightweight implementation for services of Affitto Certificato API",
+    "keywords": ["affitto","certificato"],
+    "homepage": "https://github.com/bradiporitmico/affittocertificato_clientapi",
+    "license": "GPL",
+    "require": {
+        "php": ">=7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "AffittoCertificato\\Api\\": "src/"
+        }
+    },
+}
