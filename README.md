@@ -34,7 +34,7 @@ if (!$result->success){
 
 ## Response structure
 
-API calls always return a structured response, as in the exampled below:
+API calls always return a structured response, as in the example below:
 ```json
 {
     "success": true,
@@ -49,7 +49,7 @@ API calls always return a structured response, as in the exampled below:
 }
 ```
 
-where field "success" (boolean) means if the call has been succesfully processed, this not means "success" of the operations itself, but only mean "succesfully" of the api call.
+where field "success" (boolean) means if the call has been succesfully processed, this not means "success" of the operations itself, but only mean "succesfully" of the api call. Anyway if the "success" is true you are sure that the response is valid and all data you need is there.
 
 "requestID" is an universal id that identify the request for future logging and debugging operations
 
