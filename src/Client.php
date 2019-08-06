@@ -10,6 +10,7 @@
  * @author 	Paolo Rosi <paolo.rosi@affittocertificato.it>
  * @link	   https://github.com/bradiporitmico/affittocertificato_api
  */
+
 namespace AffittoCertificato\Api;
 
 
