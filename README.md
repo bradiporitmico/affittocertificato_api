@@ -49,15 +49,15 @@ API calls always return a structured response, as in the example below:
 }
 ```
 
-where field "success" (boolean) means if the call has been succesfully processed, this not means "success" of the operations itself, but only mean "succesfully" of the api call. Anyway if the "success" is true you are sure that the response is valid and all data you need is there.
+- "success" (boolean) means that the call has been succesfully processed, this not means "success" of the operations itself, but only mean "succesfull" of the api call. Anyway if the "success" is true you can be sure that the response is valid and all data you need is there.
 
-"requestID" is an universal id that identify the request for future logging and debugging operations
+- "requestID" is an universal id that identify the request for future logging and debugging operations
 
-"errorType" is a unique string that identify the type of error. This field is useful, to the client, to discriminate the type of error and adopt the appropriate measures (display an error message, rollback on the database, and more)
+- "errorType" is a unique string that identify the type of error. This field is useful, to the client, to discriminate the type of error and adopt the appropriate measures (display an error message, rollback on the database, and more)
 
-"errorMessage" is a descriptive text of error (if any)
+- "errorMessage" is a descriptive text of error (if any)
 
-"response" is the "real" response produced by API method, and the structure depend on it. In the example above is shown the response for "userRatingByEmail" call.
+- "response" is the "real" response produced by API method, and the structure depend on it. In the example above is shown the response for "userRatingByEmail" call.
 
 
 ## Requirements
