@@ -1,0 +1,1 @@
+# affittocertificato_api
