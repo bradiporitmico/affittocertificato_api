@@ -5,6 +5,7 @@
     "keywords": ["affitto","certificato"],
     "homepage": "https://github.com/bradiporitmico/affittocertificato_clientapi",
     "license": "GPL-3.0-or-later",
+    "version": "1.0.35",
     "authors":[{
         "name": "Paolo Rosi",
         "email": "paolo.rosi@affittocertificato.it",
