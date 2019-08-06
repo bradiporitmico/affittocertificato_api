@@ -53,11 +53,11 @@ API calls always return a structured response, as in the example below:
 
 - "requestID" is an universal id that identify the request for future logging and debugging operations
 
-- "errorType" is a unique string that identify the type of error. This field is useful, to the client, to discriminate the type of error and adopt the appropriate measures (display an error message, rollback on the database, and more)
+- "errorType" is a unique string that identify the type of error. This field is useful, to the client, to discriminate the type of error and adopt the appropriate measures (display an error message, rollback on the database, and so...)
 
 - "errorMessage" is a descriptive text of error (if any)
 
-- "response" is the "real" response produced by API method, and the structure depend on it. In the example above is shown the response for "userRatingByEmail" call.
+- "response" is the "real" response produced by API method, and the structure depend on it. In the example above is shown the response for "userRatingByEmail" call. To test and see al the different response structures, you can visit [this page](https://api.affittocertificato-services.cloud/api-doc/index.html) and try the call by yourself
 
 
 ## Requirements
