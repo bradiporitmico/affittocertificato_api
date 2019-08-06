@@ -4,7 +4,7 @@
     "description": "Lightweight implementation for services of Affitto Certificato API",
     "keywords": ["affitto","certificato"],
     "homepage": "https://github.com/bradiporitmico/affittocertificato_clientapi",
-    "license": "GPL",
+    "license": "GPL-3.0-or-later",
     "require": {
         "php": ">=7.0"
     },
