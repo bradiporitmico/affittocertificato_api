@@ -78,7 +78,7 @@ require 'vendor/autoload.php';
 
 ## Documentation
 
-A swagger page can be found [here] (https://api.affittocertificato-services.cloud/api-doc/index.html).
+A swagger testing page can be found [here](https://api.affittocertificato-services.cloud/api-doc/index.html).
 You can use this page to test the API calls.
 
 
