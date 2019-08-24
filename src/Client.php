@@ -31,9 +31,11 @@ class Client{
 			curl_setopt($ch, CURLOPT_HTTPHEADER, ["Authorization: bearer {$this->token}"]);
 		}
 
+		/*
 		// workaround for servers with self signed certificates
 		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 		curl_setopt($ch, CURLOPT_SSL_VERIFYSTATUS, false);
+		*/
 
 		if ($post){
 			curl_setopt($ch, CURLOPT_POST, true); 
