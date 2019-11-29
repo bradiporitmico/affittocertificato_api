@@ -1,7 +1,7 @@
 # Affitto Certificato Client API Library
 
 
-Simple and fast implementation for services of Affitto Certificato API
+Simple and fast implementation for Affitto Certificato web service API
 
 [![Latest Stable Version](https://poser.pugx.org/affittocertificato/clientapi/version)](https://packagist.org/packages/affittocertificato/clientapi)
 [![License](https://poser.pugx.org/affittocertificato/clientapi/license)](https://packagist.org/packages/affittocertificato/clientapi)

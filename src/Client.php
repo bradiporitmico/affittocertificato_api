@@ -26,6 +26,7 @@ class Client{
 	private function apiCall (string $method, array $post=null){
 		$ch = curl_init();
 		$url = "{$this->baseUrl}{$method}";
+
 		curl_setopt($ch, CURLOPT_URL, $url);
 		if ($this->token){
 			curl_setopt($ch, CURLOPT_HTTPHEADER, ["Authorization: bearer {$this->token}"]);
