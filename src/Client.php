@@ -118,4 +118,15 @@ class Client{
 		return $this->response->success;
 	}
 	
+	public function userCreateWithPhone (string $givenName, string $familyName, string $email, string $italianFiscalCode, string $phone) : bool{
+		$this->response = $this->apiCall("userCreateWithPhone",[
+			'givenName' => $givenName,
+			'familyName' => $familyName,
+			'email' => $email,
+			'italianFiscalCode' => $italianFiscalCode,
+			'phone' => $phone
+		]);
+		return $this->response->success;
+	}
+	
 }
