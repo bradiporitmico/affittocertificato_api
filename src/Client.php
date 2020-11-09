@@ -98,6 +98,11 @@ class Client{
 		return $this->response->success;
 	}
 	
+	public function ping () {
+		$this->response = $this->apiCall("ping");
+		return $this->response->success;
+	}
+	
 	public function getPrivacyTexts () : bool{
 		$this->response = $this->apiCall("getPrivacyTexts");
 		return $this->response->success;
