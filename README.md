@@ -3,9 +3,8 @@
 
 Simple and fast implementation for Affitto Certificato web service API
 
-[![Latest Stable Version](https://poser.pugx.org/affittocertificato/clientapi/v)](//packagist.org/packages/affittocertificato/clientapi)
+[![Latest Stable Version](https://poser.pugx.org/affittocertificato/clientapi/v)](//packagist.org/packages/affittocertificato/clientapi) 
 [![License](https://poser.pugx.org/affittocertificato/clientapi/license)](https://packagist.org/packages/affittocertificato/clientapi)
-
 
 
 ## Basic example
