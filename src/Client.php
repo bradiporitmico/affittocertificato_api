@@ -23,7 +23,7 @@ class Client{
 	private $token = null;
 	private $response = null;
 
-	private function apiCall (string $method, array $post=null){
+	private function apiCall (string $method, $post=null){
 		$ch = curl_init();
 		$url = "{$this->baseUrl}{$method}";
 
@@ -40,7 +40,11 @@ class Client{
 
 		if ($post){
 			curl_setopt($ch, CURLOPT_POST, true); 
-			curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+			if (is_array($post)){
+				curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($post));
+			}	else {
+				curl_setopt($ch, CURLOPT_POSTFIELDS, $post);
+			}
 		}
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		$return = curl_exec($ch);
@@ -128,5 +132,15 @@ class Client{
 		]);
 		return $this->response->success;
 	}
+
+	public function userCreateJson ($json) : bool{
+		$this->response = $this->apiCall("user/create", $json);
+		if (isset($this->response->success))
+			return $this->response->success;
+		else	
+			return false;
+	}
+	
+
 	
 }
