@@ -53,11 +53,11 @@ class Client{
 		if (!$return)
 			throw new NullResponseException('Null response received');
 		
-		$return = json_decode($return);
-		if (!$return)
-			throw new FailedCallException("Invalid response");
+		$json = json_decode($return);
+		if (!$json)
+			throw new FailedCallException("Invalid response '$return'");
 
-		return $return;
+		return $json;
 	}
 
 	public function getResponse() : \stdClass{
@@ -84,11 +84,11 @@ class Client{
 
 	public function login (string $username, string $password) : bool{
 		$this->response = $this->apiCall('login', ['username'=>$username, 'password'=>$password]);
-		if ($this->response->success){
+		if ($res = (isset($this->response->success) && $this->response->success)){
 			$this->setBaseUrl ($this->response->response->endpoint);
 			$this->setToken ($this->response->response->token);
 		}
-		return $this->response->success;
+		return $res;
 
 	}
 
@@ -133,12 +133,28 @@ class Client{
 		return $this->response->success;
 	}
 
-	public function userCreateJson ($json) : bool{
-		$this->response = $this->apiCall("user/create", $json);
+	public function userCreateSimple (string $givenName, string $familyName, string $email, string $phone) : bool{
+		$this->response = $this->apiCall("user/create/simple",[
+			'givenName' => $givenName,
+			'familyName' => $familyName,
+			'email' => $email,
+			'phone' => $phone
+		]);
+		return $this->response->success;
+	}
+
+	public function userCreateJson ($data) : bool{
+		$this->response = $this->apiCall("user/create", json_encode($data));
 		if (isset($this->response->success))
 			return $this->response->success;
 		else	
 			return false;
+	}
+	
+
+	public function usersList () : bool{
+		$this->response = $this->apiCall("users/list");
+		return $this->response->success ?? false;
 	}
 	
 
