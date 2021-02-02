@@ -133,12 +133,13 @@ class Client{
 		return $this->response->success;
 	}
 
-	public function userCreateSimple (string $givenName, string $familyName, string $email, string $phone) : bool{
+	public function userCreateSimple (string $givenName, string $familyName, string $email, string $phone, string $type = 'tenant') : bool{
 		$this->response = $this->apiCall("user/create/simple",[
 			'givenName' => $givenName,
 			'familyName' => $familyName,
 			'email' => $email,
-			'phone' => $phone
+			'phone' => $phone,
+			'type' => $type,
 		]);
 		return $this->response->success;
 	}
